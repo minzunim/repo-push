@@ -31,6 +31,7 @@ async function saveSha(repo, branch, sha) {
 
 // 최신 커밋 여부 체크
 async function checkCommit(repo) {
+  console.log('🔔 크론 작동 중')
 
   const prevSha = await getLastSha(repo) // jsonbin에 저장된 최근 sha
 
